@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 
 app.get('/', function (req, res) {
-  res.send('<h1>Bienvenido a mi servidor REST</h1>');
+  res.send('<h1>Bienvenido a mi servidor REST(localhost)</h1>');
 });
  
 app.get('/usuario', function (req, res) {
