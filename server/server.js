@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
-    res.send('<h1>Bienvenido a mi servidor REST</h1>');
+    res.send('<h1>Bienvenido a mi servidor rest</h1>');
 });
 
 app.use(require('./routes/usuario'));
@@ -25,7 +25,7 @@ mongoose.connect('mongodb+srv://admin:12345678Qq@cluster0.0mdsl.mongodb.net/cafe
     useFindAndModify: false
 }, (err, res) => {
     if (err) throw err;
-    console.log('Base de datos ONLINE');
+    console.log('Base de datos online');
 });
 
 app.listen(process.env.PORT, () => {
